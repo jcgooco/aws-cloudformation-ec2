@@ -5,7 +5,7 @@ on:
 
 jobs:
   continuous-deployment:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
      # Step 1
       - name: Configure AWS credentials
@@ -18,8 +18,7 @@ jobs:
       - name: Deploy Cloudformation Template
         id: deploy
         run: |
-          pwd
-          cp -r ${{ github.repository }}/ec2.yml /home/runner/work/aws-cloudformation-ec2/aws-cloudformation-ec2/
+          pwd          
           ls -la /home/runner/work/aws-cloudformation-ec2/aws-cloudformation-ec2/
 
           
