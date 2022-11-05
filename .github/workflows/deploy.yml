@@ -19,7 +19,7 @@ jobs:
         id: deploy
         run: |
           pwd
-          cp ec2.yml /home/runner/work/aws-cloudformation-ec2/aws-cloudformation-ec2/
+          cp -r ${{ github.repository }}/ec2.yml /home/runner/work/aws-cloudformation-ec2/aws-cloudformation-ec2/
           ls -la /home/runner/work/aws-cloudformation-ec2/aws-cloudformation-ec2/
 
           
