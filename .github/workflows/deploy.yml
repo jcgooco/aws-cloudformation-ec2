@@ -20,5 +20,7 @@ jobs:
       - name: Create CodeDeploy Deployment
         id: deploy
         run: |
-          aws cloudformation deploy --template-file ./ec2.yaml --stack-name ec2-new-stack
+          aws cloudformation deploy \
+            --template-file ${{ github.repository }} /ec2.yaml \
+            --stack-name ec2-new-stack
           
