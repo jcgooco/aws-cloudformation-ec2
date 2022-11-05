@@ -8,3 +8,10 @@ inputs:
 outputs:
   region: # id of output
     description: "AWS Region to deployed"
+runs:
+  using: "composite"
+  steps:
+    - run: github.action_repository
+      shell: bash
+
+    
