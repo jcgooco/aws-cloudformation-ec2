@@ -19,6 +19,6 @@ jobs:
         id: deploy
         run: |
           pwd          
-          ls -la /home/runner/work/aws-cloudformation-ec2/aws-cloudformation-ec2/
+          ls -la /home/jgooco/actions-runner/_work/aws-cloudformation-ec2/aws-cloudformation-ec2/
 
           
