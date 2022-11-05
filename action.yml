@@ -11,7 +11,7 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - run: echo "ap-southeast-1" ${{ inputs.region }}.
+    - run: ${{ inputs.region }}.
       shell: bash
 
     
