@@ -31,7 +31,7 @@ jobs:
 
       # Deploy to AWS CloudFormation
       - name: Deploy to AWS Cloudformation
-        uses: jcgooco/aws-cloudformation-ec2@v1
+        uses: jcgooco/aws-cloudformation-ec2
         with:
           name: ec2-test-stack
           template: ec2.yaml
