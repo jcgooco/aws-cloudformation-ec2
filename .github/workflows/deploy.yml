@@ -17,7 +17,6 @@ jobs:
      # Step 2
       - name: Create CodeDeploy Deployment
         id: deploy
-        working-directory: /home/jgooco/github/aws-cloudformation-ec2/
         run: |
           aws cloudformation deploy \
             --template-file ${{ github.repository }}/ec2.yaml \
