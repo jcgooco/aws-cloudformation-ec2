@@ -21,7 +21,7 @@ jobs:
           pwd          
           cd /home/jgooco/actions-runner/_work/aws-cloudformation-ec2/aws-cloudformation-ec2/
           aws cloudformation deploy \
-            --template-file ec2.yml \
+            --template-file /home/jgooco/actions-runner/_work/aws-cloudformation-ec2/aws-cloudformation-ec2/ec2.yml \
             --stack-name ec2-new-stack
 
           
