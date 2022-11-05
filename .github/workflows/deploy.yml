@@ -20,6 +20,6 @@ jobs:
         working-directory: ./
         run: |
           aws cloudformation deploy \
-            --template-file ec2.yaml \
+            --template-file ${{ github.repository }}/ec2.yaml \
             --stack-name ec2-new-stack
           
