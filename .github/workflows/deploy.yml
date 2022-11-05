@@ -18,11 +18,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE
       - name: Checkout code from master branch
-        uses: actions/checkout@main
+        uses: actions/checkout@v1
 
       # Configure AWS Credential
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@main
+        uses: aws-actions/configure-aws-credentials@v1
         #uses: ec2_deployment
         with:
           aws-access-key-id: ${{ secrets.ACCESS_KEY }}
