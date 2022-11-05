@@ -15,10 +15,10 @@ jobs:
           aws-secret-access-key: ${{ secrets.ACCESS_KEY_SECRET }}
           aws-region: ap-southeast-1
      # Step 2
-      - name: Create CodeDeploy Deployment
+      - name: Deploy Cloudformation Template
         id: deploy
         run: |
-          aws cloudformation deploy \
-            --template-file ${{ github.repository }}/ec2.yml \
-            --stack-name ec2-new-stack
+          pwd
+          la -la
+
           
