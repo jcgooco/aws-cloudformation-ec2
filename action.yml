@@ -11,7 +11,7 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - run: ${{ github.repository }}
+    - run: echo "ap-southeast-1" 
       shell: bash
 
     
