@@ -17,8 +17,9 @@ jobs:
      # Step 2
       - name: Create CodeDeploy Deployment
         id: deploy
+        working-directory: ${{ github.repository }}
         run: |
           aws cloudformation deploy \
-            --template-file repository=${{ github.repository }}/ec2.yaml \
+            --template-file ec2.yaml \
             --stack-name ec2-new-stack
           
