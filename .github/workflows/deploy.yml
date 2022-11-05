@@ -19,6 +19,6 @@ jobs:
         id: deploy
         run: |
           aws cloudformation deploy \
-            --template-file ${{ github.repository }}/ec2.yaml \
+            --template-file ${{ github.repository }}/ec2.yml \
             --stack-name ec2-new-stack
           
