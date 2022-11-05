@@ -35,4 +35,3 @@ jobs:
         with:
           name: ec2-test-stack
           template: ec2.yaml
-          no-fail-on-empty-changeset: "1"
