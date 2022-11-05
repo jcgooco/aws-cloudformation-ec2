@@ -18,7 +18,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE
       - name: Checkout code from master branch
-        uses: aws-cloudformation-ec2/checkout@main
+        uses: jcgooco/aws-cloudformation-ec2@main
 
       # Configure AWS Credential
       - name: Configure AWS Credentials
