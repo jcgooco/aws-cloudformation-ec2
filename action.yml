@@ -8,3 +8,7 @@ inputs:
 outputs:
   region: # id of output
     description: "AWS Region to deployed"
+runs:
+  using: "composite"
+  steps:
+      shell: bash
