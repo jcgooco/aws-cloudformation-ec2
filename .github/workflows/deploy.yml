@@ -19,6 +19,6 @@ jobs:
         id: deploy
         run: |
           pwd
-          la -la
+          ls -la
 
           
